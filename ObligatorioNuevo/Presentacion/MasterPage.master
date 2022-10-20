@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: right;
+        }
+        .auto-style2 {
+            width: 382px;
+        }
+        .auto-style3 {
+            width: 596px;
+        }
+        .auto-style4 {
+            font-weight: bold;
+        }
+        .auto-style5 {
+            width: 596px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="lblNombreLogueo" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="#FF5050"></asp:Label>
+                </td>
+                <td class="auto-style3">
+                    &nbsp;</td>
+                <td class="auto-style1">
+                    <strong>
+                    <asp:Button ID="btnDeloguear" runat="server" Text="Desconectarse" 
+                        onclick="btnDeloguear_Click" CssClass="auto-style4" />
+                    </strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    &nbsp;</td>
+                <td class="auto-style3">
+                    &nbsp;</td>
+                <td class="auto-style1">
+                    <strong>
+                    <asp:Label ID="lblError" runat="server" ForeColor="Red"></asp:Label>
+                    </strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    &nbsp;</td>
+                <td class="auto-style3">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="White" ForeColor="Black">
+                        <Items>
+                            <asp:MenuItem Text="Usuario" NavigateUrl="~/UsuarioMP.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Mensajes" Value="Mensajes">
+                                <asp:MenuItem Text="Mensaje Comun" Value="Mensaje Comun" NavigateUrl="~/MensajeComunMP.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Mensaje Privado" Value="Mensaje Privado" NavigateUrl="~/MensajePrivadoMP.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Bandeja de Entrada" Value="Bandeja de Entrada" NavigateUrl="~/BandejaEntrada.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Bandeja de Salida" Value="Bandeja de Salida" NavigateUrl="~/BadejaSalida.aspx"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="auto-style3">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    &nbsp;</td>
+                <td class="auto-style3">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    &nbsp;</td>
+                <td class="auto-style5">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</body>
+</html>

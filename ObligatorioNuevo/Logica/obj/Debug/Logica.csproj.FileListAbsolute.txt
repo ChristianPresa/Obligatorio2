@@ -1,0 +1,81 @@
+D:\Bios\Segundo Año\Obligatorio\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+D:\Bios\Segundo Año\Obligatorio\Logica\bin\Debug\Logica.dll
+D:\Bios\Segundo Año\Obligatorio\Logica\bin\Debug\Logica.pdb
+D:\Bios\Segundo Año\Obligatorio\Logica\bin\Debug\Mensajes.dll
+D:\Bios\Segundo Año\Obligatorio\Logica\bin\Debug\Persistencia.dll
+D:\Bios\Segundo Año\Obligatorio\Logica\bin\Debug\Persistencia.pdb
+D:\Bios\Segundo Año\Obligatorio\Logica\bin\Debug\Mensajes.pdb
+D:\Bios\Segundo Año\Obligatorio\Logica\obj\Debug\Logica.dll
+D:\Bios\Segundo Año\Obligatorio\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\obj\Debug\Logica.dll
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\bin\Debug\Logica.dll
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\bin\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\bin\Debug\Mensajes.dll
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\bin\Debug\Mensajes.pdb
+C:\Users\usuario\Desktop\mensajes2\Obligatorio\Logica\bin\Debug\Persistencia.pdb
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\bin\Debug\Logica.dll
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\bin\Debug\Logica.pdb
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\bin\Debug\Mensajes.dll
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\bin\Debug\Persistencia.dll
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\bin\Debug\Mensajes.pdb
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\bin\Debug\Persistencia.pdb
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\obj\Debug\Logica.dll
+C:\Users\Mathi\Desktop\ObligatorioNuevo\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\bin\Debug\Logica.dll
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\bin\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\bin\Debug\Mensajes.dll
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\bin\Debug\Mensajes.pdb
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\bin\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\obj\Debug\Logica.dll
+C:\Users\usuario\Desktop\mensajes2\ObligatorioNuevo\Logica\obj\Debug\Logica.pdb
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\bin\Debug\Logica.dll
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\bin\Debug\Logica.pdb
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\bin\Debug\Mensajes.dll
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\bin\Debug\Persistencia.dll
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\bin\Debug\Mensajes.pdb
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\bin\Debug\Persistencia.pdb
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\obj\Debug\Logica.dll
+D:\Bios\Segundo Año\Programacion I\ObligatorioNuevo\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\bin\Debug\Logica.dll
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\bin\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\bin\Debug\Mensajes.dll
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\bin\Debug\Mensajes.pdb
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\bin\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\obj\Debug\Logica.dll
+C:\Users\usuario\Desktop\mensajes 3 actual\ObligatorioNuevo\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\bin\Debug\Logica.dll
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\bin\Debug\Logica.pdb
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\bin\Debug\Mensajes.dll
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\bin\Debug\Mensajes.pdb
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\bin\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\obj\Debug\Logica.dll
+C:\Users\usuario\Desktop\mensajes25\ObligatorioNuevo\Logica\obj\Debug\Logica.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Logica.dll
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Logica.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Mensajes.dll
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Persistencia.dll
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Mensajes.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Persistencia.pdb
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\obj\Debug\Logica.dll
+C:\Users\Mathi\Desktop\Nueva carpeta\ObligatorioNuevo\Logica\obj\Debug\Logica.pdb
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Logica.dll
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Logica.pdb
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Mensajes.dll
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Persistencia.dll
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Mensajes.pdb
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\bin\Debug\Persistencia.pdb
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\obj\Debug\Logica.dll
+C:\Users\usuario\Desktop\entrega Mensajes\Nueva carpeta\ObligatorioNuevo\Logica\obj\Debug\Logica.pdb
