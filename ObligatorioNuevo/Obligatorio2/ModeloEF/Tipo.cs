@@ -14,7 +14,16 @@ namespace ModeloEF
     
     public partial class Tipo
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Tipo()
+        {
+            this.Mensaje = new HashSet<Mensaje>();
+        }
+    
         public string CodigoTipo { get; set; }
         public string NombreTipo { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Mensaje> Mensaje { get; set; }
     }
 }

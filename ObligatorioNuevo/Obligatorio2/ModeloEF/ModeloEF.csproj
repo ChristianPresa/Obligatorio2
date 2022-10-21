@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mensaje.cs">
-      <DependentUpon>Mensajes.tt</DependentUpon>
+      <DependentUpon>Sitio.tt</DependentUpon>
     </Compile>
     <Compile Include="Mensajes.Context.cs">
       <AutoGen>True</AutoGen>
@@ -70,12 +70,28 @@
       <DependentUpon>Mensajes.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sitio.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sitio.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sitio.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sitio.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Tipo.cs">
-      <DependentUpon>Mensajes.tt</DependentUpon>
+      <DependentUpon>Sitio.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">
-      <DependentUpon>Mensajes.tt</DependentUpon>
+      <DependentUpon>Sitio.tt</DependentUpon>
     </Compile>
+    <Compile Include="Validar.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Mensajes.edmx">
@@ -89,6 +105,13 @@
       <DependentUpon>Mensajes.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <EntityDeploy Include="Sitio.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Sitio.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Sitio.edmx.diagram">
+      <DependentUpon>Sitio.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Mensajes.Context.tt">
@@ -100,6 +123,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Mensajes.edmx</DependentUpon>
       <LastGenOutput>Mensajes.cs</LastGenOutput>
+    </Content>
+    <Content Include="Sitio.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Sitio.edmx</DependentUpon>
+      <LastGenOutput>Sitio.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Sitio.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Sitio.edmx</DependentUpon>
+      <LastGenOutput>Sitio.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

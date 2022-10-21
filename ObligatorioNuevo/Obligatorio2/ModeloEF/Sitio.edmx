@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MensajesModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Mensaje">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FechaHora" Type="datetime" />
+          <Property Name="Asunto" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Texto" Type="varchar(max)" Nullable="false" />
+          <Property Name="NombreUsuario" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="CodigoTipo" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="FechaCaduca" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Recibe">
+          <Key>
+            <PropertyRef Name="NombreUsuario" />
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="NombreUsuario" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="Codigo" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="CodigoTipo" />
+          </Key>
+          <Property Name="CodigoTipo" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="NombreTipo" Type="varchar" MaxLength="15" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="NombreUsuario" />
+          </Key>
+          <Property Name="NombreUsuario" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="Pass" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="NombreCompleto" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Mail" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Mensaje__CodigoT__0F975522">
+          <End Role="Tipo" Type="Self.Tipo" Multiplicity="1" />
+          <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipo">
+              <PropertyRef Name="CodigoTipo" />
+            </Principal>
+            <Dependent Role="Mensaje">
+              <PropertyRef Name="CodigoTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Mensaje__NombreU__0EA330E9">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="NombreUsuario" />
+            </Principal>
+            <Dependent Role="Mensaje">
+              <PropertyRef Name="NombreUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Recibe__Codigo__15502E78">
+          <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="1" />
+          <End Role="Recibe" Type="Self.Recibe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mensaje">
+              <PropertyRef Name="Codigo" />
+            </Principal>
+            <Dependent Role="Recibe">
+              <PropertyRef Name="Codigo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Recibe__NombreUs__145C0A3F">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Recibe" Type="Self.Recibe" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="NombreUsuario" />
+            </Principal>
+            <Dependent Role="Recibe">
+              <PropertyRef Name="NombreUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="BajaUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="NombreLogueo" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="MensajesModel1StoreContainer">
+          <EntitySet Name="Mensaje" EntityType="Self.Mensaje" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Recibe" EntityType="Self.Recibe" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tipo" EntityType="Self.Tipo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Mensaje__CodigoT__0F975522" Association="Self.FK__Mensaje__CodigoT__0F975522">
+            <End Role="Tipo" EntitySet="Tipo" />
+            <End Role="Mensaje" EntitySet="Mensaje" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Mensaje__NombreU__0EA330E9" Association="Self.FK__Mensaje__NombreU__0EA330E9">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Mensaje" EntitySet="Mensaje" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Recibe__Codigo__15502E78" Association="Self.FK__Recibe__Codigo__15502E78">
+            <End Role="Mensaje" EntitySet="Mensaje" />
+            <End Role="Recibe" EntitySet="Recibe" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Recibe__NombreUs__145C0A3F" Association="Self.FK__Recibe__NombreUs__145C0A3F">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Recibe" EntitySet="Recibe" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MensajesModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Mensaje">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FechaHora" Type="DateTime" Precision="3" />
+          <Property Name="Asunto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Texto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NombreUsuario" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CodigoTipo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaCaduca" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Tipo" Relationship="Self.FK__Mensaje__CodigoT__0F975522" FromRole="Mensaje" ToRole="Tipo" />
+          <NavigationProperty Name="Usuario" Relationship="Self.FK__Mensaje__NombreU__0EA330E9" FromRole="Mensaje" ToRole="Usuario" />
+          <NavigationProperty Name="Usuario1" Relationship="Self.Recibe" FromRole="Mensaje" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="CodigoTipo" />
+          </Key>
+          <Property Name="CodigoTipo" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NombreTipo" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Mensaje" Relationship="Self.FK__Mensaje__CodigoT__0F975522" FromRole="Tipo" ToRole="Mensaje" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="NombreUsuario" />
+          </Key>
+          <Property Name="NombreUsuario" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Pass" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NombreCompleto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Mail" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Mensaje" Relationship="Self.FK__Mensaje__NombreU__0EA330E9" FromRole="Usuario" ToRole="Mensaje" />
+          <NavigationProperty Name="Mensaje1" Relationship="Self.Recibe" FromRole="Usuario" ToRole="Mensaje" />
+        </EntityType>
+        <Association Name="FK__Mensaje__CodigoT__0F975522">
+          <End Role="Tipo" Type="Self.Tipo" Multiplicity="1" />
+          <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipo">
+              <PropertyRef Name="CodigoTipo" />
+            </Principal>
+            <Dependent Role="Mensaje">
+              <PropertyRef Name="CodigoTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Mensaje__NombreU__0EA330E9">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+          <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="NombreUsuario" />
+            </Principal>
+            <Dependent Role="Mensaje">
+              <PropertyRef Name="NombreUsuario" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Recibe">
+          <End Role="Mensaje" Type="Self.Mensaje" Multiplicity="*" />
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="MensajesEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Mensaje" EntityType="Self.Mensaje" />
+          <EntitySet Name="Tipo" EntityType="Self.Tipo" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+          <AssociationSet Name="FK__Mensaje__CodigoT__0F975522" Association="Self.FK__Mensaje__CodigoT__0F975522">
+            <End Role="Tipo" EntitySet="Tipo" />
+            <End Role="Mensaje" EntitySet="Mensaje" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Mensaje__NombreU__0EA330E9" Association="Self.FK__Mensaje__NombreU__0EA330E9">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="Mensaje" EntitySet="Mensaje" />
+          </AssociationSet>
+          <AssociationSet Name="Recibe" Association="Self.Recibe">
+            <End Role="Mensaje" EntitySet="Mensaje" />
+            <End Role="Usuario" EntitySet="Usuario" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MensajesModel1StoreContainer" CdmEntityContainer="MensajesEntities1">
+          <EntitySetMapping Name="Mensaje">
+            <EntityTypeMapping TypeName="MensajesModel1.Mensaje">
+              <MappingFragment StoreEntitySet="Mensaje">
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
+                <ScalarProperty Name="Asunto" ColumnName="Asunto" />
+                <ScalarProperty Name="Texto" ColumnName="Texto" />
+                <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+                <ScalarProperty Name="CodigoTipo" ColumnName="CodigoTipo" />
+                <ScalarProperty Name="FechaCaduca" ColumnName="FechaCaduca" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipo">
+            <EntityTypeMapping TypeName="MensajesModel1.Tipo">
+              <MappingFragment StoreEntitySet="Tipo">
+                <ScalarProperty Name="CodigoTipo" ColumnName="CodigoTipo" />
+                <ScalarProperty Name="NombreTipo" ColumnName="NombreTipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="MensajesModel1.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+                <ScalarProperty Name="Pass" ColumnName="Pass" />
+                <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+                <ScalarProperty Name="Mail" ColumnName="Mail" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Recibe" TypeName="MensajesModel1.Recibe" StoreEntitySet="Recibe">
+            <EndProperty Name="Mensaje">
+              <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+            </EndProperty>
+            <EndProperty Name="Usuario">
+              <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

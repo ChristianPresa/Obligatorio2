@@ -4,7 +4,7 @@ go
 create database Mensajes
 on (
 name= Mensajes,
-filename ='C:\BiosMensajes.mdp'
+filename ='D:\Bios\Segundo Año\BD\BiosMensajes.mdp'
 )
 go
 --------------
@@ -178,7 +178,7 @@ GO
 -----------------------------------------------------------
 
 -- ELIMINAR MENSAJE
-alter proc BajaUsuario
+create proc BajaUsuario
 @NombreLogueo varchar(8)
 as
 begin

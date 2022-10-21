@@ -31,6 +31,6 @@ namespace ModeloEF
         public virtual Tipo Tipo { get; set; }
         public virtual Usuario Usuario { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual HashSet<Usuario> Usuario1 { get; set; }
+        public virtual ICollection<Usuario> Usuario1 { get; set; }
     }
 }
