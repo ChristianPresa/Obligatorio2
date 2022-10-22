@@ -39,6 +39,7 @@ namespace ModeloEF
                 throw new Exception("El tipo debe contener 3 letras");
             if (!(Tipo.NombreTipo.Trim().Length <= 15 && Tipo.NombreTipo.Trim() != ""))
                 throw new Exception("El mensaje debe contener un nombre y debe ser menor a 15 letras."); //Misma validacion que proyecto anerior?
+            //Cambio 2
         }
     }
 }
