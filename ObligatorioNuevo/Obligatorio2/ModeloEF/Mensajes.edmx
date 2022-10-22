@@ -215,6 +215,13 @@
                 <ScalarProperty Name="FechaCaduca" ColumnName="FechaCaduca" />
               </MappingFragment>
             </EntityTypeMapping>
+            <EntityTypeMapping TypeName="MensajesModel.Mensaje">
+              <ModificationFunctionMapping>
+                <DeleteFunction FunctionName="MensajesModel.Store.BajaUsuario" >
+                  <ScalarProperty Name="NombreUsuario" ParameterName="NombreLogueo" />
+                </DeleteFunction>
+              </ModificationFunctionMapping>
+            </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Tipo">
             <EntityTypeMapping TypeName="MensajesModel.Tipo">

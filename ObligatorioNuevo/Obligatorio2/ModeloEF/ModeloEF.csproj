@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mensaje.cs">
-      <DependentUpon>Sitio.tt</DependentUpon>
+      <DependentUpon>Mensajes.tt</DependentUpon>
     </Compile>
     <Compile Include="Mensajes.Context.cs">
       <AutoGen>True</AutoGen>
@@ -86,10 +86,10 @@
       <DependentUpon>Sitio.edmx</DependentUpon>
     </Compile>
     <Compile Include="Tipo.cs">
-      <DependentUpon>Sitio.tt</DependentUpon>
+      <DependentUpon>Mensajes.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">
-      <DependentUpon>Sitio.tt</DependentUpon>
+      <DependentUpon>Mensajes.tt</DependentUpon>
     </Compile>
     <Compile Include="Validar.cs" />
   </ItemGroup>
