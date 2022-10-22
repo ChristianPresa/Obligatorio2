@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MensajesModelStoreContainer" CdmEntityContainer="MensajesEntities">
+    <EntitySetMapping Name="Mensaje">
+      <EntityTypeMapping TypeName="MensajesModel.Mensaje">
+        <MappingFragment StoreEntitySet="Mensaje">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
+          <ScalarProperty Name="Asunto" ColumnName="Asunto" />
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="CodigoTipo" ColumnName="CodigoTipo" />
+          <ScalarProperty Name="FechaCaduca" ColumnName="FechaCaduca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="MensajesModel.Mensaje">
+        <ModificationFunctionMapping>
+          <DeleteFunction FunctionName="MensajesModel.Store.BajaUsuario">
+            <ScalarProperty Name="NombreUsuario" ParameterName="NombreLogueo" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipo">
+      <EntityTypeMapping TypeName="MensajesModel.Tipo">
+        <MappingFragment StoreEntitySet="Tipo">
+          <ScalarProperty Name="CodigoTipo" ColumnName="CodigoTipo" />
+          <ScalarProperty Name="NombreTipo" ColumnName="NombreTipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="MensajesModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="MensajesModel.Usuario">
+        <ModificationFunctionMapping>
+          <DeleteFunction FunctionName="MensajesModel.Store.BajaUsuario">
+            <ScalarProperty Name="NombreUsuario" ParameterName="NombreLogueo" />
+          </DeleteFunction>
+        </ModificationFunctionMapping>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Recibe" TypeName="MensajesModel.Recibe" StoreEntitySet="Recibe">
+      <EndProperty Name="Mensaje">
+        <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+      </EndProperty>
+      <EndProperty Name="Usuario">
+        <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="SpEliminarUsuario" FunctionName="MensajesModel.Store.BajaUsuario" />
+  </EntityContainerMapping>
+</Mapping>

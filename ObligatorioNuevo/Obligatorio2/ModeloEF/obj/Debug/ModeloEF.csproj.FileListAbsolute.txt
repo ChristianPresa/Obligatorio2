@@ -1,0 +1,10 @@
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\bin\Debug\ModeloEF.dll.config
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\bin\Debug\ModeloEF.dll
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\bin\Debug\ModeloEF.pdb
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\bin\Debug\EntityFramework.dll
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\bin\Debug\EntityFramework.xml
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\obj\Debug\ModeloEF.csprojResolveAssemblyReference.cache
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\obj\Debug\ModeloEF.dll
+C:\Users\usuario\Desktop\provisorio\Obligatorio2\ObligatorioNuevo\Obligatorio2\ModeloEF\obj\Debug\ModeloEF.pdb
