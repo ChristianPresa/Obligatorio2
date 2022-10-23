@@ -8,7 +8,7 @@ namespace ModeloEF
 {
     public class Validar
     {
-        public static void Mensaje(Mensaje Men)
+        public static void ValidarMensaje(Mensaje Men)
         {
             if (Men.Asunto.Trim() == "")
                 throw new Exception("El mensaje debe contener un Asuto");
@@ -20,7 +20,7 @@ namespace ModeloEF
                 throw new Exception("Debe contener un tipo de mensaje.");
         }
 
-        public static void Usuarios(Usuario Usu)
+        public static void ValidarUsuarios(Usuario Usu)
         {
             if (!(Usu.Mail.Trim().Length <= 20 && Usu.Mail.Trim() != "")) //FALTA VALIDAR @
                     throw new Exception("Debe contener contener un mail.");
@@ -33,7 +33,7 @@ namespace ModeloEF
                
         }
 
-        public static void Tipo(Tipo Tipo)
+        public static void ValidarTipo(Tipo Tipo)
         {
             if (!(System.Text.RegularExpressions.Regex.IsMatch(Tipo.CodigoTipo, "[A-Za-z]{3}")))
                 throw new Exception("El tipo debe contener 3 letras");
